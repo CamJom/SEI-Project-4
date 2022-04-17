@@ -1,4 +1,5 @@
 import os
+import django_on_heroku
 
 """
 Django settings for project project.
@@ -151,3 +152,4 @@ STATIC_URL = '/static/' # same with this
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'client', "build", "static"),
 )
+django_on_heroku.settings(locals())
