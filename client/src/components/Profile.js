@@ -18,7 +18,7 @@ const Profile = () => {
 
         const getSingleProfile = async () => {
           try {
-            const { data } = await axios.get(`/api/auth/3`)
+            const { data } = await axios.get(`/api/auth/3/`)
             setProfile(data)
             console.log('DATA ------>', data)
           } catch (err) {

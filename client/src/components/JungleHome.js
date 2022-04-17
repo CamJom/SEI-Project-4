@@ -21,7 +21,7 @@ const JungleHome = () => {
   useEffect(() => {
     const getAnimals = async () => {
       try {
-        const { data } = await axios.get('/api/animals') // * <-- replace with your endpoint
+        const { data } = await axios.get('/api/animals/') // * <-- replace with your endpoint
         const filteredanimals = data.filter((animal) => {
             return animal.biome === 'jungle'
         })
@@ -36,13 +36,13 @@ const JungleHome = () => {
 
   return (
     <div className='animalJungleHome'>
-    <Link style={divStyle} to={`/animals/ocean`}> <h3> To the ocean </h3> </Link>
+    <Link style={divStyle} to={`/animals/ocean/`}> <h3> To the ocean </h3> </Link>
     <Grid container direction="row" className='allAnimalContainer' columnSpacing={3}>
         {animals.map((animal, i) => {
             console.log(animal)
             return (
               <Grid item md={3} sx={{ m: 2 }} className='animalContainers'>
-                <Link id='animal-link' to={`/animals/${animal.id}`}>
+                <Link id='animal-link' to={`/animals/${animal.id}/`}>
                     <div className={`animal-div`} id='css-fix' key={i} value={i}>
 
                         <h1> {animal.image} </h1>
@@ -55,7 +55,7 @@ const JungleHome = () => {
           } 
         )}
         </Grid >
-      <Link style={divStyle} to={`/animals/city`}> <h3> To the City </h3> </Link>
+      <Link style={divStyle} to={`/animals/city/`}> <h3> To the City </h3> </Link>
     </div>
   )
 }

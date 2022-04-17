@@ -25,16 +25,16 @@ function App() {
       <Routes>
 
         <Route path="/" element = {<Intro />} />
-        <Route path="/animals" element = {<Home />} />
-        <Route path="/animals/ocean" element = {<OceanHome />} />
-        <Route path="/animals/city" element = {<CityHome />} />
-        <Route path="/animals/jungle" element = {<JungleHome />} />
-        <Route path="/login" element = {<Login />} />
-        <Route path="/landing" element = {<AuthLanding />} />
-        <Route path="/register" element = {<Register />} />
-        <Route path="/profile" element = {<Profile />} />
-        <Route path="/animals/:animalId" element = {<AnimalDetails />} />
-        <Route path="/animals/:animalId/reviews" element = {<Reviews />} />
+        <Route path="/animals/" element = {<Home />} />
+        <Route path="/animals/ocean/" element = {<OceanHome />} />
+        <Route path="/animals/city/" element = {<CityHome />} />
+        <Route path="/animals/jungle/" element = {<JungleHome />} />
+        <Route path="/login/" element = {<Login />} />
+        <Route path="/landing/" element = {<AuthLanding />} />
+        <Route path="/register/" element = {<Register />} />
+        <Route path="/profile/" element = {<Profile />} />
+        <Route path="/animals/:animalId/" element = {<AnimalDetails />} />
+        <Route path="/animals/:animalId/reviews/" element = {<Reviews />} />
 
       </Routes>
       </BrowserRouter>

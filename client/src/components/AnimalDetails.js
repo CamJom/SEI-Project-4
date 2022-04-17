@@ -29,7 +29,7 @@ const AnimalDetails = () => {
 
         const getSingleAnimal = async () => {
           try {
-            const { data } = await axios.get(`/api/animals/${animalId}`)
+            const { data } = await axios.get(`/api/animals/${animalId}/`)
             setAnimal(data)
             console.log('DATA ------>', data)
           } catch (err) {

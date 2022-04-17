@@ -26,7 +26,7 @@ const SiteNavbar = () => {
     <div className='nav-style'>
       <div className='nav-logo'>
         <Navbar.Brand>
-          <Link className='btn btn-logo' to='/animals'> <img id='zoo-logo' src='https://image.shutterstock.com/image-photo/image-260nw-479703550.jpg' alt='zoo-logo' /> </Link>
+          <Link className='btn btn-logo' to='/animals/'> <img id='zoo-logo' src='https://image.shutterstock.com/image-photo/image-260nw-479703550.jpg' alt='zoo-logo' /> </Link>
         </Navbar.Brand>
       </div>
 
@@ -34,7 +34,7 @@ const SiteNavbar = () => {
         <>
           <div className='nav-profile'>
             <Nav.Item>
-              <Link className='btn btn-nav' to="/profile"> Profile </Link>
+              <Link className='btn btn-nav' to="/profile/"> Profile </Link>
             </Nav.Item>
           </div>
           <Nav.Item onClick={handleLogout}>
@@ -44,13 +44,13 @@ const SiteNavbar = () => {
         <>
           <div className='nav-login'>
             <Nav.Item>
-              <Link className='btn btn-nav' to="register"> Register </Link>
+              <Link className='btn btn-nav' to="register/"> Register </Link>
             </Nav.Item>
           </div>
 
           <div className='nav-login'>
             <Nav.Item>
-              <Link className='btn btn-nav' to="/login"> Login </Link>
+              <Link className='btn btn-nav' to="/login/"> Login </Link>
             </Nav.Item>
           </div>
         </>}
