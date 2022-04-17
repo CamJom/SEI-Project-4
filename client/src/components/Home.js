@@ -36,7 +36,7 @@ const Home = () => {
 
   return (
     <div className='animalHome'>
-        <Link style={divStyle} to={`/animals/cit/`}> <span id='biome-jump'> To the City </span> </Link>
+        <Link style={divStyle} to={`/animals/city/`}> <span id='biome-jump'> To the City </span> </Link>
         <Grid container direction="row" className='allAnimalContainer' columnSpacing={3}>
         {animals.map((animal, i) => {
             console.log(animal)
